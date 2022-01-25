@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(58, 148, 143);
+
+
+}
+.navegacion{
+    /*menu fijo*/
+    /*ancho width*/
+    width: 600px ;
+    margin: 30px auto;
+    /*auto centrar izquierda derecha*/
+    background-color: azure;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navegacion ul{
+    /*viñetas de lado izquierdo*/
+list-style: none;
+}
+.menu > li{
+    /* ">" solamente para aclarar*/
+position: relative;
+display: inline-block;
+}
+.menu > li >a{
+    /* "a" elemenos de linea*/
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+    /*subMenu*/
+    .subMenu{
+    position: absolute;
+    text-decoration: none;
+    background-color: rgb(33, 33, 212);
+    /* ocultar elemeto*/
+    display: none;
+    width: 100px;
+    
+    
+    }
+    
+    .subMenu li a{
+    display: block;
+    padding: 2px  ;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    }
+    
+    /*hover hace qe el usuario posiciones en el 
+    q pasa el mouse q pasen cosas sobre lo q escribi*/
+    
+    
+    .menu li:hover .subMenu{
+    
+    display: block;
+    
+    }
